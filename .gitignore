@@ -1,0 +1,8 @@
+*.pyc
+*.jpg
+GeoLite2-City.mmdb.gz
+MaxMind-DB-Reader-python-master.zip
+test.py
+__pycache__
+phtalks
+
