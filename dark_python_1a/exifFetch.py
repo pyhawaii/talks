@@ -16,11 +16,15 @@ def findImages(url):
     print('Searching for images on ', url)
     urlContent = urlopen(url).read()
     soup = BeautifulSoup(urlContent)
-    imgTags = soup.findAll('img')
-    return imgTags
+    # imgTags = soup.findAll('img')
+    scriptTags = soup.findAll('script')
+    # return imgTags
+    return scriptTags
 
 def downloadImage(imgTag):
+    #soup.findAll('img')[0].get('src')
     try:
+        
         imgSrc = imgTag['src']
         imgContent = urlopen(imgSrc).read()
         imgFileName = basename(urlsplit(imgSrc)[2])
@@ -57,12 +61,13 @@ def main():
         print(parser.usage)
         exit(0)
     else:
-        imgTags = findImages(url)
+        # imgTags = findImages(url)
+        scriptTags = findImages(url)
+        print(scriptTags)  
         for imgTag in imgTags:
             imgFileName = downloadImage(imgTag)
             testForExif(imgFileName)
-
+        return imgTags
 if __name__ == '__main__':
-    main()
-
+    a = main()
 
