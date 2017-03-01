@@ -1,0 +1,52 @@
+# This is a game of function golf, where the output of one function
+# is the input to another function, whose output becomes the input to another
+# function
+# your task is to create the code inside each of the functions below
+# such that it will accept the proper inputs and produce the proper outputs
+# as defined within each of the functions below.
+# You are given a list of words that feed into the first function.
+
+words = ['extraconstitutional',
+         'lollygagging',
+         'introspectively',
+         'anaesthesiology',
+         'hypersensitivenesses',
+         'rehospitalizations',
+         'wonky',
+         'microminiaturization',
+         'beguiling']
+
+def func_01(words):
+    '''given a list of words of assorted lengths, return an Ordered Dictionary
+    with the words as keys (strings) and the lengths of the words as strings,
+    where:
+        0) each key is a word from the list (in the order presented in the list)
+        1) each value is the length of the word stored as a string
+    '''
+
+    return
+
+
+def func_02(ordered_dict):
+    '''given an Ordered Dictionary that includes both strings as keys and
+    integers as values, extract the values and return them as a list.
+
+    return a list of integers
+    '''
+    return
+
+
+def func_03(integers):
+    '''given a list of integers, reverse the list and return a string of
+    lowercase letters based on the position of the integer in the standard
+    US English alphabet:
+    1 => 'a'
+    2 => 'b'
+    ...
+    26 => 'z'
+
+    The result will be the name of a python module.
+    '''
+    return
+
+print(func_03(func_02(func_01(words))))
