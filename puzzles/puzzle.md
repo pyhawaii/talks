@@ -1,4 +1,4 @@
-Read in the XML file: [records.xml](../records.xml). This XML file has a structure that looks like this:
+Read in the XML file: [records.xml](records.xml). This XML file has a structure that looks like this:
 
 ```xml
 <records>
