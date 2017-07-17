@@ -19,7 +19,7 @@ Read in the XML file: 'records.xml'. This XML file has a structure that looks li
 </records>
 ```
 
-This puzzle has several components. Complete as many as you can...
+This puzzle has several components, with substeps. Complete as many as you can...
 
 0) Find all records with dates in the year 2013
     * Display the date from the first record in that year
