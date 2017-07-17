@@ -28,8 +28,8 @@ This puzzle has several components, with substeps. Complete as many as you can..
         * Display the last names of all users with an `id` attribute of `admin`
 
 1) **Starting over with all the records**, this time, find all records with
-    * A payload between 59500 and 60500:
+    * A `payload` between `59500` and `60500`:
         * Display **all** the payloads that meet this criteria
     * For records with these payloads:
-        * Display **all** the 'to' OR 'from' IP addresses that fall within
-          a 48.0.0.0/5 network.
+        * Display **all** the `toip` OR `fmip` IP addresses that fall within
+          a `48.0.0.0/5` network.
