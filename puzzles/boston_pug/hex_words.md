@@ -10,9 +10,9 @@ Find all English hex() words, i.e. strings of hex digits that appear to be Engli
 
 For example...
 
-The word `bee` in hex is 3054 in decimal.
-The word `face` in hex is 64206 in decimal.
-The word `decade` in hex is 14600926 in decimal.
+* The word `bee` in hex is 3054 in decimal.
+* The word `face` in hex is 64206 in decimal.
+* The word `decade` in hex is 14600926 in decimal.
 
 **Find the hex word with the highest decimal value.**
 
