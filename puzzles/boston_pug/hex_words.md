@@ -14,7 +14,7 @@ The word `bee` in hex is 3054 in decimal.
 The word `face` in hex is 64206 in decimal.
 The word `decade` in hex is 14600926 in decimal.
 
-*Find the hex word with the highest decimal value.*
+**Find the hex word with the highest decimal value.**
 
 For those who are interested, I pulled the `words` list off a Mac from `/usr/share/dict/words` 
 
