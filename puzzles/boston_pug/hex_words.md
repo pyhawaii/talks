@@ -2,7 +2,7 @@ This puzzle comes from the [Boston Python User Group](http://puzzles.bostonpytho
 
 Paraphrasing from [Hex Words](http://puzzles.bostonpython.com/hexwords.html):
 
-Certain words can be generated using the six alpha characters used by the hexadecimal numbering system: 'a', 'b', 'c', 'd', 'e', and 'f'.
+Certain words can be generated using the six alpha characters used by the hexadecimal numbering system: `a`, `b`, `c`, `d`, `e`, and `f`.
 
 For our purposes and so that everyone is using the same `dictionary` use the `words` file in this repo's `boston_pug` folder.
 
