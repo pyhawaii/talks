@@ -87,3 +87,20 @@ for value, grp in groupby(l):
 
 num = len(on)
 print(sum(len(sublist) for sublist in on) / num)
+
+# version 4...
+from itertools import groupby
+from statistics import mean
+
+def mean_duration(l):
+   """
+   Takes in a list l whose values will be cast to boolean
+   
+   Finds the average length of runs of True
+   
+   >>> mean_duration([0,0,0,1,1,1,0,0,1,0,0,0,1,1,1,1,0])
+   2.6666666666666665
+   >>> mean_duration([0,0,0,1,2,5,0,0,1,0,0,0,1,7,1,1,0])
+   2.6666666666666665
+   """
+   return mean(len(list(g)) for v, g in groupby(map(bool,l)) if v)
