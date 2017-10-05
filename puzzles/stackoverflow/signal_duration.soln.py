@@ -49,17 +49,41 @@ def size(xs):
 
 results = list(size(l))
 average = sum(results)/len(results)
-
+print(average)
 
 # version 2...
+
+signals = []
+previous_sig = 0
+
+for item in l:
+    if item == 1 and previous_sig == 0:
+        # starting a new signal
+        signals.append([item])
+
+    elif item == 1 and previous_sig == 1:
+        # continuing the signal...
+        signals[-1].append(item)
+
+    previous_sig = item
+
+num = len(signals)
+
+average = sum(len(sublist) for sublist in signals) / num
+
+print(average)
+
+
+# version 3...
 from itertools import groupby
 
 on = []
 
-for k, g in groupby(l):
-    g = list(g)
-    if g[0]:
-        on.append(len(g))
-    print(k, g, len(g))
+for value, grp in groupby(l):
+    if value:
+        on.append(list(grp))
 
-average = sum(on)/len(on)
+    # print(k, g, len(g))
+
+num = len(on)
+print(sum(len(sublist) for sublist in on) / num)
