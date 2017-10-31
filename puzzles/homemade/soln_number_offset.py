@@ -14,13 +14,13 @@
 # Go find it.
 
 
-text = list(open('puzz2.txt').read())
+text = list(open('number_offset.txt').read())
 
 counter = 0
 increment = -1
 output = []
 
-for char in text:
+for index, char in enumerate(text, 1):
     if char.isdigit():
         increment = int(char)
         # reset the counter
