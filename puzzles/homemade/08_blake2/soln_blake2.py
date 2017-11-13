@@ -29,7 +29,7 @@ with open('hashes.txt') as hashin:
     hashes = {h.strip() for h in hashin.readlines()}
 
 # WORDS:
-with open('../data/real_words.txt') as wordsin:
+with open('real_words.txt') as wordsin:
     words = [w.strip() for w in wordsin.readlines()]
 
 
