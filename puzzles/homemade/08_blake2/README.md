@@ -4,4 +4,4 @@ This puzzle is focused on using keys, salts, personalizations to create a hash h
 
 For full details see the file:
 
-[empty_blake2.py](https://github.com/pyhawaii/talks/new/master/puzzles/homemade/08_blake2/empty_blake2.py)
+[empty_blake2.py](https://github.com/pyhawaii/talks/blob/master/puzzles/homemade/08_blake2/empty_blake2.py)
