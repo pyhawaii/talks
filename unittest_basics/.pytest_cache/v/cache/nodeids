@@ -1,0 +1,7 @@
+[
+  "tests/test_factorial.py::TestFactorial::()::test_base_case",
+  "tests/test_factorial.py::TestFactorial::()::test_some_values",
+  "tests/test_factorial.py::TestFactorial::()::test_boundary",
+  "tests/test_factorial.py::TestFactorial::()::test_negative_input",
+  "tests/test_factorial.py::TestFactorial::()::test_non_integer"
+]
